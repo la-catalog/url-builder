@@ -1,6 +1,3 @@
-from pydantic import AnyHttpUrl
-
-
 class Marketplace:
     """
     Base class for the marketplaces classes.
@@ -9,7 +6,7 @@ class Marketplace:
     def __init__(self, logger) -> None:
         self._logger = logger
 
-    def build_sku(self, code: str) -> AnyHttpUrl:
+    def build_sku_url(self, code: str) -> str:
         """
         Not every marketplace use the SKU code in the URL.
         While this gives you a potential URL for the SKU,
@@ -21,9 +18,9 @@ class Marketplace:
         pass it instead.
         """
 
-        return AnyHttpUrl("https://thiagola92.github.io/")
+        return "https://thiagola92.github.io/"
 
-    def build_query(self, query: str) -> AnyHttpUrl:
+    def build_query_url(self, query: str) -> str:
         """Build the URL for a query in the marketplace"""
 
-        return AnyHttpUrl("https://thiagola92.github.io/")
+        return "https://thiagola92.github.io/"
