@@ -15,13 +15,11 @@ class Builder:
     def build_sku_url(self, code: str, marketplace: str) -> str:
         builder = get_marketplace_builder(marketplace=marketplace, logger=self._logger)
         url = builder.build_sku_url(code=code)
-        url = AnyHttpUrl(url)
 
-        return str(url)
+        return url
 
     def build_query_url(self, query: str, marketplace: str) -> str:
         builder = get_marketplace_builder(marketplace=marketplace, logger=self._logger)
         url = builder.build_query_url(query=query)
-        url = AnyHttpUrl(url)
 
-        return str(url)
+        return url
