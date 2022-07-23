@@ -1,7 +1,6 @@
 [project]
 name = "url-builder"
 version = "0.1.0"
-description = "Create url for marketplace"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
