@@ -8,6 +8,8 @@ class Marketplace:
 
     def build_sku_url(self, code: str) -> str:
         """
+        Build the URL for a sku in the marketplace.
+
         Not every marketplace use the SKU code in the URL.
         While this gives you a potential URL for the SKU,
         it can't be sure as each marketplace can use a
@@ -21,6 +23,6 @@ class Marketplace:
         return "https://thiagola92.github.io/"
 
     def build_query_url(self, query: str) -> str:
-        """Build the URL for a query in the marketplace"""
+        """Build the URL for a query in the marketplace."""
 
         return "https://thiagola92.github.io/"
