@@ -1,5 +1,5 @@
 # url-builder
-Responsável por criar URLs dos marketplaces para determinadas tarefas.  
+Use esse pacote para criar URLs dos marketplaces.  
 
 # install
 `pdm add url-builder`  
